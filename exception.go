@@ -12,7 +12,10 @@ func main() {
     }
 
     defer func() {
+	recover(){
+
         fmt.Println("Exit gracefully")
+}
     }()
 }
 
